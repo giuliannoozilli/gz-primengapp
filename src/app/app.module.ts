@@ -8,6 +8,7 @@ import {CalendarModule} from 'primeng/calendar';
 import { CalendarComponent } from './componentes/calendar/calendar.component';
 import {ButtonModule} from 'primeng/button';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,7 +18,7 @@ import {ButtonModule} from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     CalendarModule,
-    ButtonModule
+    ButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
