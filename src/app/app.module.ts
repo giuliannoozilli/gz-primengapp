@@ -3,24 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ButtonModule } from 'primeng/button';
 
-import {CalendarModule} from 'primeng/calendar';
-import { CalendarComponent } from './componentes/calendar/calendar.component';
-import {ButtonModule} from 'primeng/button';
-
-
+import { FormsModule } from '@angular/forms';
+import { AccordionComponent } from './componentes/accordion/accordion.component';
+import { DonachartComponent } from './componentes/donachart/donachart.component';
+import { AreapolarchartComponent } from './componentes/areapolarchart/areapolarchart.component';
+import { CarouselComponent } from './componentes/carousel/carousel.component';
+import { EditordetxtComponent } from './componentes/editordetxt/editordetxt.component';
 @NgModule({
-  declarations: [
-    AppComponent,
-    CalendarComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    CalendarModule,
-    ButtonModule,
-  ],
+  declarations: [AppComponent, AccordionComponent, DonachartComponent, AreapolarchartComponent, CarouselComponent, EditordetxtComponent],
+  imports: [BrowserModule, AppRoutingModule, ButtonModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
