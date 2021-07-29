@@ -1,20 +1,16 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ButtonModule } from 'primeng/button';
+import { AppRoutingModule } from './app-routing.module';
 
-import { FormsModule } from '@angular/forms';
-import { AccordionComponent } from './componentes/accordion/accordion.component';
-import { DonachartComponent } from './componentes/donachart/donachart.component';
-import { AreapolarchartComponent } from './componentes/areapolarchart/areapolarchart.component';
-import { CarouselComponent } from './componentes/carousel/carousel.component';
-import { EditordetxtComponent } from './componentes/editordetxt/editordetxt.component';
+/* Modulos */
+
 @NgModule({
-  declarations: [AppComponent, AccordionComponent, DonachartComponent, AreapolarchartComponent, CarouselComponent, EditordetxtComponent],
-  imports: [BrowserModule, AppRoutingModule, ButtonModule, FormsModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
