@@ -20,22 +20,25 @@ export class AppComponent {
         label: 'Inicio',
         routerLink: 'inicio',
       },
-
       {
         label: 'Evolucion',
         routerLink: 'evo',
       },
       {
-        label: 'Caracteristicas',
+        label: 'Características',
+        routerLink: 'carac',
       },
       {
         label: 'Comportamiento',
+        routerLink: 'comp',
       },
       {
         label: 'Razas',
+        routerLink: 'raza',
       },
       {
         label: 'Galeria',
+        routerLink: 'gal',
       },
     ];
   }

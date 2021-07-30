@@ -3,7 +3,16 @@ body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
+p {
+  text-align: justify;
+}
 
+.fs-img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 .pagebody {
   margin: 0 100px 0 100px;
 }
