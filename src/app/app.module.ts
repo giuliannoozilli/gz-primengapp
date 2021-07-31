@@ -3,14 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-/* Modulos */
+/* Modulos ⬇️*/
 import { MenubarModule } from 'primeng/menubar';
 import { ButtonModule } from 'primeng/button';
 import { TabViewModule } from 'primeng/tabview';
 import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { FieldsetModule } from 'primeng/fieldset';
-/* Modulos */
+import { TableModule } from 'primeng/table';
+/* Modulos ⬆️*/
 
 import { AppComponent } from './app.component';
 
@@ -41,6 +42,7 @@ import { GaleriaComponent } from './componentes/galeria/galeria.component';
     CardModule,
     DividerModule,
     FieldsetModule,
+    TableModule,
   ],
   providers: [],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
