@@ -1,10 +1,13 @@
 <div class="hero-img">
   <div class="hero-txt">
-    <h1>Las Diferentes Razas Del Gato</h1>
+    <h1 class="scalein animation-duration-500 animation-iteration-1">
+      Las Diferentes Razas Del Gato
+    </h1>
   </div>
 </div>
 
 <div class="pagebody">
+  <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
   <p>
     La cantidad de razas de exhibición reconocidas que han definido
@@ -17,6 +20,48 @@
     atigrado (rojo, azul, etc.). Otras razas distintivas y populares incluyen el
     siamés (con variaciones de color de punto de sello, punto azul, punto de
     chocolate y punto lila), el Himalaya de pelo largo , que se asemeja al
-    siamés en coloración, y el abisinio , birmano., Manx , Rex y Russian Blue
+    siamés en coloración, y el abisinio, birmano, Manx, Rex y Russian Blue.
   </p>
+  <h2>Lista de razas con pelo corto</h2>
+  <p>
+    En la tabla se enumera una selección de razas de gatos domésticos de pelo
+    corto.
+  </p>
+  <p-table [value]="razas2">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Nombre</th>
+        <th>Origen</th>
+        <th>Características</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-raza2>
+      <tr>
+        <td>{{ raza2.nombre }}</td>
+        <td>{{ raza2.origen }}</td>
+        <td>{{ raza2.carac }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
+  <h2>Lista de razas con pelo largo</h2>
+  <p>
+    En la tabla se enumera una selección de razas de gatos domésticos de pelo
+    largo.
+  </p>
+  <p-table [value]="razas">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>Nombre</th>
+        <th>Origen</th>
+        <th>Características</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-raza>
+      <tr>
+        <td>{{ raza.nombre }}</td>
+        <td>{{ raza.origen }}</td>
+        <td>{{ raza.carac }}</td>
+      </tr>
+    </ng-template>
+  </p-table>
 </div>

@@ -1,15 +1,25 @@
 <div class="hero-img">
   <div class="hero-txt">
-    <h1>El Comportamiento Del Gato</h1>
+    <h1 class="scalein animation-duration-500 animation-iteration-1">
+      El Comportamiento Del Gato
+    </h1>
   </div>
 </div>
 
 <div class="pagebody">
+  <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
   <p-tabView>
     <p-tabPanel header="Rasgos especiales">
-      <img src="assets/mother-cat-kitten.jpg" />
-      <p>aseo</p>
+      <p-card
+        [style]="{ width: '360px' }"
+        styleClass="p-card-shadow"
+        class="img-ini2"
+      >
+        <ng-template pTemplate="header">
+          <img alt="card image" src="assets/mother-cat-kitten.jpg" />
+        </ng-template>
+      </p-card>
       <p>
         El gato tiene un repertorio sutil de expresiones faciales, sonidos
         vocales y posturas de la cola y el cuerpo que expresan su estado
@@ -41,6 +51,15 @@
       </p>
     </p-tabPanel>
     <p-tabPanel header="Problemas de comportamiento">
+      <p-card
+        [style]="{ width: '360px' }"
+        styleClass="p-card-shadow"
+        class="img-ini"
+      >
+        <ng-template pTemplate="header">
+          <img alt="card image" src="assets/cat-fierce.jpg" />
+        </ng-template>
+      </p-card>
       <p>
         En condiciones de domesticación, el gato está sujeto a una variedad de
         factores que dan como resultado un comportamiento indicativo de angustia
@@ -95,7 +114,15 @@
       </p>
     </p-tabPanel>
     <p-tabPanel header="Otros rasgos">
-      <img src="assets/cat-mixedbreed.jpg" />
+      <p-card
+        [style]="{ width: '360px' }"
+        styleClass="p-card-shadow"
+        class="img-ini2"
+      >
+        <ng-template pTemplate="header">
+          <img alt="card image" src="assets/cat-mixedbreed.jpg" />
+        </ng-template>
+      </p-card>
       <p>
         Los patrones de sueño del gato son diferentes a los de los perros y los
         humanos. Los perros y los humanos tienen largos períodos de sueño REM

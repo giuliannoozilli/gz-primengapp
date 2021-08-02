@@ -11,6 +11,8 @@ import { CardModule } from 'primeng/card';
 import { DividerModule } from 'primeng/divider';
 import { FieldsetModule } from 'primeng/fieldset';
 import { TableModule } from 'primeng/table';
+import { HttpClientModule } from '@angular/common/http';
+import { ScrollTopModule } from 'primeng/scrolltop';
 /* Modulos ⬆️*/
 
 import { AppComponent } from './app.component';
@@ -21,6 +23,9 @@ import { CaracteristicasComponent } from './componentes/caracteristicas/caracter
 import { ComportamientoComponent } from './componentes/comportamiento/comportamiento.component';
 import { RazasComponent } from './componentes/razas/razas.component';
 import { GaleriaComponent } from './componentes/galeria/galeria.component';
+
+import { RazaService } from './componentes/razas//raza.service';
+import { Raza2Service } from './componentes/razas/raza2.service';
 
 @NgModule({
   declarations: [
@@ -43,8 +48,10 @@ import { GaleriaComponent } from './componentes/galeria/galeria.component';
     DividerModule,
     FieldsetModule,
     TableModule,
+    HttpClientModule,
+    ScrollTopModule,
   ],
-  providers: [],
+  providers: [RazaService, Raza2Service],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })

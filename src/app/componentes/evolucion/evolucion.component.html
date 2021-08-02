@@ -1,10 +1,13 @@
 <div class="hero-img">
   <div class="hero-txt">
-    <h1>La Evolucion De Los Gatos</h1>
+    <h1 class="scalein animation-duration-500 animation-iteration-1">
+      La Evolucion De Los Gatos
+    </h1>
   </div>
 </div>
 
 <div class="pagebody">
+  <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
   <p>
     El "patrón de gato", establecido muy temprano en la evolución de los
@@ -36,9 +39,10 @@
         subheader="Cortesía del Instituto Oriental de la Universidad de Chicago"
         [style]="{ width: '360px' }"
         styleClass="p-card-shadow"
+        class="img-ini"
       >
         <ng-template pTemplate="header">
-          <img alt="Card" src="assets/dome1.jpg" />
+          <img src="assets/dome1.jpg" />
         </ng-template>
       </p-card>
 
@@ -54,22 +58,6 @@
         haber domesticado ellos mismos eligiendo vivir en paisajes alterados por
         humanos.
       </p>
-      <p-card
-        header="Gato Momificado"
-        subheader="Museo de Ciencias, Londres / Wellcome Collection, Londres (CC BY 4.0)"
-        [style]="{ width: '360px' }"
-        styleClass="p-card-shadow"
-      >
-        <ng-template pTemplate="header">
-          <img alt="Card" src="assets/dome2.jpg" />
-        </ng-template>
-        <p>
-          Un gato momificado del antiguo Egipto. El afecto y respeto de los
-          egipcios por este depredador llevó al desarrollo religioso de los
-          cultos a los gatos y el culto a los gatos en los templos.
-        </p>
-      </p-card>
-      <p-divider></p-divider>
       <p>
         Aunque el gato fue proclamado un animal sagrado en Egipto en las
         dinastías V y VI (c. 2465-c. 2150 a. C. ), no necesariamente había sido
@@ -99,29 +87,49 @@
         actualidadLos atigrados pueden ser descendientes de los gatos sagrados
         de Egipto.
       </p>
-      <p-card
-        header="Gato Abisinio"
-        subheader="Fotografía Chanan"
-        [style]="{ width: '360px' }"
-        styleClass="p-card-shadow"
-      >
-        <ng-template pTemplate="header">
-          <img alt="Card" src="assets/cat-abisinio.jpg" />
-        </ng-template>
-        <p>Abisinio, rojo o alazán.</p>
-      </p-card>
+      <div class="flex flex-warp">
+        <p-card
+          header="Gato Abisinio"
+          subheader="Fotografía Chanan"
+          [style]="{ width: '360px' }"
+          styleClass="p-card-shadow"
+          class="img-ini"
+        >
+          <ng-template pTemplate="header">
+            <img alt="Card" src="assets/cat-abisinio.jpg" />
+          </ng-template>
+          <p>Abisinio, rojo o alazán.</p>
+        </p-card>
+        <p-card
+          header="Gato Momificado"
+          subheader="Museo de Ciencias, Londres / Wellcome Collection, Londres (CC BY 4.0)"
+          [style]="{ width: '360px' }"
+          styleClass="p-card-shadow"
+          class="img-ini2"
+        >
+          <ng-template pTemplate="header">
+            <img alt="Card" src="assets/dome2.jpg" />
+          </ng-template>
+          <p>
+            Un gato momificado del antiguo Egipto. El afecto y respeto de los
+            egipcios por este depredador llevó al desarrollo religioso de los
+            cultos a los gatos y el culto a los gatos en los templos.
+          </p>
+        </p-card>
+      </div>
     </p-tabPanel>
     <p-tabPanel header="Asociaciones con la cultura humana">
       <p-card
-        header="Gato Leopardo"
-        subheader="Gerard Lacz"
+        header="Estatua De Bastet"
+        subheader="© Kathleen R Grilley / Fotolia"
         [style]="{ width: '360px' }"
         styleClass="p-card-shadow"
+        class="img-ini2"
       >
         <ng-template pTemplate="header">
-          <img alt="Card" src="assets/leopard-cat.jpg" />
+          <img alt="Card" src="assets/cat-statue.jpg" />
         </ng-template>
-        <p>Gato leopardo ( Prionailurus bengalensis ).</p>
+        <p>Estatua de gato egipcio que representa a la diosa Bastet.</p>
       </p-card>
       <p>
         El gato ha jugado un papel durante mucho tiempo en la religión y la
@@ -140,45 +148,12 @@
       </p>
       <p>
         El gato es una figura familiar en las canciones infantiles , los cuentos
-        y los refranes . La leyenda inglesa de Dick Whittington y su gato es una
+        y los refranes. La leyenda inglesa de Dick Whittington y su gato es una
         de las favoritas. Los escritores Théophile Gautier y Charles Baudelaire
         le rindieron homenaje, y en el siglo XX Rudyard Kipling , Colette y TS
         Eliot escribieron sobre gatos, y el compositor británico Sir Andrew
         Lloyd Webber creó la popular producción teatral Cats .
       </p>
-      <p-card
-        header="Estatua De Bastet"
-        subheader="© Kathleen R Grilley / Fotolia"
-        [style]="{ width: '360px' }"
-        styleClass="p-card-shadow"
-      >
-        <ng-template pTemplate="header">
-          <img alt="Card" src="assets/cat-statue.jpg" />
-        </ng-template>
-        <p>Estatua de gato egipcio que representa a la diosa Bastet.</p>
-      </p-card>
-      <p>
-        El gato es una figura familiar en las canciones infantiles , los cuentos
-        y los refranes . La leyenda inglesa de Dick Whittington y su gato es una
-        de las favoritas. Los escritores Théophile Gautier y Charles Baudelaire
-        le rindieron homenaje, y en el siglo XX Rudyard Kipling , Colette y TS
-        Eliot escribieron sobre gatos, y el compositor británico Sir Andrew
-        Lloyd Webber creó la popular producción teatral Cats .
-      </p>
-      <p-card
-        header="Dick Whittington Y Su Gato"
-        subheader="Cortesía de los fideicomisarios del Museo Británico; fotografía, JR Freeman & Co. Ltd."
-        [style]="{ width: '360px' }"
-        styleClass="p-card-shadow"
-      >
-        <ng-template pTemplate="header">
-          <img alt="Card" src="assets/dw-cat.jpg" />
-        </ng-template>
-        <p>
-          Supuesto retrato de Dick Whittington y su gato, grabado por Renold
-          (Renier) Elstracke, principios del siglo XVII.
-        </p>
-      </p-card>
     </p-tabPanel>
   </p-tabView>
 </div>

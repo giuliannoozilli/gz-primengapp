@@ -1,11 +1,24 @@
 <div class="hero-img">
   <div class="hero-txt">
-    <h1>Los Gatos</h1>
+    <h1 class="scalein animation-duration-500 animation-iteration-1">
+      Los Gatos
+    </h1>
   </div>
 </div>
 
 <div class="pagebody">
+  <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
+  <p-card
+    subheader="Chanan Photography"
+    [style]="{ width: '360px' }"
+    styleClass="p-card-shadow"
+    class="img-ini2"
+  >
+    <ng-template pTemplate="header">
+      <img alt="Card" src="assets/cat-2.jpg" />
+    </ng-template>
+  </p-card>
   <p>
     Gato, ( Felis catus ), también llamado gato doméstico o gato doméstico,
     miembro domesticado de la familia Felidae , orden Carnivora, y el miembro
@@ -13,7 +26,6 @@
     parientes salvajes al ser básicamente carnívoros, notablemente ágiles y
     poderosos, y finamente coordinados en sus movimientos.
   </p>
-  <img src="assets/cat-2.jpg" />
   <p>
     Una de esas características es de destacar que los antepasados de la otra
     mascota doméstica común, el perro, eran animales sociales que vivían juntos
@@ -23,5 +35,45 @@
     consecuencia, el gato doméstico puede volver a la autosuficiencia completa
     con mayor rapidez y éxito que la mayoría de los perros domesticados.
   </p>
-  <p-button routerLink="evo" label="Evolucion Del Gato"></p-button>
+  <p-divider></p-divider>
+  <h2>Nutrición</h2>
+  <p-card
+    [style]="{ width: '360px' }"
+    styleClass="p-card-shadow"
+    class="img-ini"
+  >
+    <ng-template pTemplate="header">
+      <img alt="Card" src="assets/cat-nutricion.jpg" />
+    </ng-template>
+  </p-card>
+  <p>
+    Los gatos deben tener una dieta similar a la de sus parientes silvestres.
+    Están adaptados por naturaleza para ser carnívoros, como lo demuestra su
+    tracto alimentario y su dentición. El gato usa sus caninos para atrapar y
+    matar a sus presas, los molares para cortarlas. La falta de dientes de
+    superficie plana le impide masticar o roer. El gato tiene un intestino corto
+    y su estómago segrega jugos digestivos que actúan principalmente sobre la
+    carne . Sin embargo, los gatos, como todos los animales carnívoros ,
+    ingieren pasto y otras plantas de vez en cuando, y pequeñas cantidades de
+    verduras pueden servir como laxantes y como removedores de bolas de pelo.
+  </p>
+  <p>
+    Como los gatos son los mamíferos carnívoros más estrictos , se alimentan de
+    la carne, pero una dieta basada exclusivamente en carne está desequilibrada
+    y provocará diversas enfermedades por deficiencia nutricional . Los gatos
+    obtienen nutrientes , incluida la humedad, de toda su presa, de ahí el bajo
+    impulso de sed de la mayoría de los gatos. Los alimentos secos comerciales
+    para mascotas, que carecen de humedad y están sobrecargados de almidón , son
+    convenientes para el propietario, pero pueden contribuir a muchas de las
+    dolencias felinas más comunes, como la obesidad , las enfermedades del
+    tracto urinario y la diabetes mellitus . El sistema de un carnívoro obligado
+    no está equipado para manejar una alta proporción de carbohidratos en la
+    dieta o para digerir la materia del grano ( ver nutrición: carnívoros ). Por
+    lo tanto, es prudente examinar la lista de ingredientes de los alimentos
+    comerciales para gatos, incluidos los alimentos "recetados", que a menudo
+    contienen ingredientes inapropiados para su especie que no tienen un lugar
+    lógico en la dieta de un gato. Además, no se recomiendan los mariscos ;
+    muchos gatos son alérgicos a este y puede estar contaminado con productos
+    químicos peligrosos.
+  </p>
 </div>
