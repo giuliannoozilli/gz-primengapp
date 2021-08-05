@@ -28,16 +28,28 @@ p {
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
-
-.hero-img {
+@font-face {
+  font-family: Regis-Semi;
+  src: url("assets/Regis-Semi Bold.ttf");
+}
+.hero-img1 {
   background-image: url(assets/cat-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.hero-img2 {
+  background-image: url(assets/cat-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .hero-txt {
   text-align: center;
+  text-transform: capitalize;
   font-size: 36px;
   color: white;
-  padding: 5rem 0 5rem 0;
+  padding: 35vh 0 35vh 0;
+  font-family: "Regis-Semi", serif;
 }
