@@ -30,6 +30,7 @@
   <p-table [value]="razas2">
     <ng-template pTemplate="header">
       <tr>
+        <th></th>
         <th>Nombre</th>
         <th>Origen</th>
         <th>Características</th>
@@ -37,6 +38,7 @@
     </ng-template>
     <ng-template pTemplate="body" let-raza2>
       <tr>
+        <td><img src="assets/sh-cats/{{ raza2.image }}" /></td>
         <td>{{ raza2.nombre }}</td>
         <td>{{ raza2.origen }}</td>
         <td>{{ raza2.carac }}</td>
@@ -51,6 +53,7 @@
   <p-table [value]="razas">
     <ng-template pTemplate="header">
       <tr>
+        <th></th>
         <th>Nombre</th>
         <th>Origen</th>
         <th>Características</th>
@@ -58,6 +61,7 @@
     </ng-template>
     <ng-template pTemplate="body" let-raza>
       <tr>
+        <img src="assets/lh-cats/{{ raza.image }}" />
         <td>{{ raza.nombre }}</td>
         <td>{{ raza.origen }}</td>
         <td>{{ raza.carac }}</td>

@@ -1,11 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
+@font-face {
+  font-family: Regis-Semi;
+  src: url("assets/Regis-Semi Bold.ttf");
+}
+
+/**/
+.footer-bottom {
+  font-weight: 700;
+  color: #fff;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 20px 0 20px 0;
+}
+.footer-bottom p {
+  text-transform: capitalize;
+  text-align: center;
+}
+.footer-bottom span {
+  text-decoration: underline;
+}
+
+/**/
+
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
 }
 p {
   text-align: justify;
-  font-size: 20px;
 }
 
 .img-ini {
@@ -24,32 +59,49 @@ p {
   margin-right: auto;
 }
 .pagebody {
-  margin: 0 100px 0 100px;
+  margin: 0 100px 100px 100px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap");
-@font-face {
-  font-family: Regis-Semi;
-  src: url("assets/Regis-Semi Bold.ttf");
-}
 .hero-img1 {
   background-image: url(assets/cat-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.hero-img2 {
-  background-image: url(assets/cat-1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+h1 {
+  padding: 0 15pc 0 15pc;
 }
-
+/* HERO */
 .hero-txt {
   text-align: center;
   text-transform: capitalize;
-  font-size: 36px;
+  font-size: 50px;
   color: white;
-  padding: 35vh 0 35vh 0;
+  padding: 25vh 0 25vh 0;
   font-family: "Regis-Semi", serif;
+  position: relative;
+  z-index: 10;
+}
+.showcase {
+  position: relative;
+  width: 100%;
+  align-items: center;
+  z-index: 2;
+}
+#bgvideo {
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.8;
 }

@@ -1,10 +1,18 @@
-<div class="hero-img">
+<section class="showcase">
+  <video
+    id="bgvideo"
+    src="assets/videos/bg-comp.mp4"
+    [muted]="'muted'"
+    loop
+    autoplay
+  ></video>
+
+  <div class="overlay"></div>
+
   <div class="hero-txt">
-    <h1 class="scalein animation-duration-500 animation-iteration-1">
-      El Comportamiento Del Gato
-    </h1>
+    <h1>El Comportamiento Del Gato</h1>
   </div>
-</div>
+</section>
 
 <div class="pagebody">
   <p-scrollTop></p-scrollTop>
@@ -17,7 +25,13 @@
         class="img-ini2"
       >
         <ng-template pTemplate="header">
-          <img alt="card image" src="assets/mother-cat-kitten.jpg" />
+          <video
+            style="width: 100%"
+            src="assets/videos/aseo.mp4"
+            [muted]="'muted'"
+            loop
+            autoplay
+          ></video>
         </ng-template>
       </p-card>
       <p>
