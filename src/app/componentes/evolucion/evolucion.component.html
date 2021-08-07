@@ -18,25 +18,31 @@
   <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
   <p>
-    El "patrón de gato", establecido muy temprano en la evolución de los
-    mamíferos modernos , fue exitoso: los primeros gatos ya tenían una forma
-    típica en un momento en que los antepasados de la mayoría de los otros tipos
-    de mamíferos modernos eran apenas reconocibles. Aparecieron por primera vez
-    a principios de la Época del Plioceno (hace 5,3 a 3,6 millones de años), y
-    han continuado con muy pocos cambios en los tiempos modernos.
+    <span class="spara">
+      El "patrón de gato", establecido muy temprano en la evolución de los
+      mamíferos modernos,</span
+    >
+    fue exitoso: los primeros gatos ya tenían una forma típica en un momento en
+    que los antepasados de la mayoría de los otros tipos de mamíferos modernos
+    eran apenas reconocibles. Aparecieron por primera vez a principios de la
+    Época del Plioceno (hace 5,3 a 3,6 millones de años), y han continuado con
+    muy pocos cambios en los tiempos modernos.
   </p>
-  <img src="assets/cat-evo.jpg" />
+  <img style="width: 100%" src="assets/cat-evo.jpg" />
 
   <p-tabView>
     <p-tabPanel header="Domesticación">
       <p>
-        Aunque el origen del gato domesticado está oculto en la antigüedad, los
-        estudios que involucran ADN mitocondrial (ADNmt) sugieren que ha habido
-        dos linajes de Felis catus . Un linaje ( F. silvestris silvestris )
-        apareció en Asia Menor posiblemente hace 6.400 años y se dispersó hacia
-        el norte y el oeste en Europa. El otro linaje apareció en Egipto en
-        algún momento entre 6.400 y 1.000 años antes de extenderse por todo el
-        Mediterráneo (posiblemente a través de la introducción humana ) a lo
+        <span class="spara"
+          >Aunque el origen del gato domesticado está oculto en la
+          antigüedad,</span
+        >
+        los estudios que involucran ADN mitocondrial (ADNmt) sugieren que ha
+        habido dos linajes de Felis catus . Un linaje ( F. silvestris silvestris
+        ) apareció en Asia Menor posiblemente hace 6.400 años y se dispersó
+        hacia el norte y el oeste en Europa. El otro linaje apareció en Egipto
+        en algún momento entre 6.400 y 1.000 años antes de extenderse por todo
+        el Mediterráneo (posiblemente a través de la introducción humana ) a lo
         largo de caminos paralelos a las rutas comerciales de la región. Los
         gatos de ambos linajes continuaron reproduciéndose con el gato salvaje
         africano ( F. silvestris lybica) durante sus respectivas dispersiones.
@@ -127,32 +133,21 @@
       </div>
     </p-tabPanel>
     <p-tabPanel header="Asociaciones con la cultura humana">
-      <p-card
-        header="Estatua De Bastet"
-        subheader="© Kathleen R Grilley / Fotolia"
-        [style]="{ width: '360px' }"
-        styleClass="p-card-shadow"
-        class="img-ini2"
-      >
-        <ng-template pTemplate="header">
-          <img alt="Card" src="assets/cat-statue.jpg" />
-        </ng-template>
-        <p>Estatua de gato egipcio que representa a la diosa Bastet.</p>
-      </p-card>
       <p>
-        El gato ha jugado un papel durante mucho tiempo en la religión y la
-        brujería. En la Biblia, "gato" se menciona solo en la Carta apócrifa de
-        Jeremías. El gato ocupó un lugar destacado en las religiones de Egipto,
-        los países nórdicos y varias partes de Asia. Los egipcios tenían una
-        diosa con cabeza de gato llamada Bast (o Bastet). Miles de gatosSe han
-        descubierto momias en Egipto, e incluso hubo momias de ratón,
-        presumiblemente para proporcionar alimento a los gatos. A menudo, el
-        gato se ha asociado con la hechicería y brujería, y las supersticiones
-        con respecto a los gatos son innumerables. A lo largo de los tiempos,
-        los gatos han sido maltratados con más crueldad que quizás cualquier
-        otro animal. Los gatos negros, en particular, han sido considerados
-        durante mucho tiempo como poseedores de poderes ocultos y familiares de
-        las brujas.
+        <span class="spara"
+          >El gato ha jugado un papel en la religión y la brujería.</span
+        >
+        En la Biblia, "gato" se menciona solo en la Carta apócrifa de Jeremías.
+        El gato ocupó un lugar destacado en las religiones de Egipto, los países
+        nórdicos y varias partes de Asia. Los egipcios tenían una diosa con
+        cabeza de gato llamada Bast (o Bastet). Miles de gatosSe han descubierto
+        momias en Egipto, e incluso hubo momias de ratón, presumiblemente para
+        proporcionar alimento a los gatos. A menudo, el gato se ha asociado con
+        la hechicería y brujería, y las supersticiones con respecto a los gatos
+        son innumerables. A lo largo de los tiempos, los gatos han sido
+        maltratados con más crueldad que quizás cualquier otro animal. Los gatos
+        negros, en particular, han sido considerados durante mucho tiempo como
+        poseedores de poderes ocultos y familiares de las brujas.
       </p>
       <p>
         El gato es una figura familiar en las canciones infantiles , los cuentos
@@ -162,6 +157,18 @@
         Eliot escribieron sobre gatos, y el compositor británico Sir Andrew
         Lloyd Webber creó la popular producción teatral Cats .
       </p>
+      <p-card
+        header="Estatua De Bastet"
+        subheader="© Kathleen R Grilley / Fotolia"
+        [style]="{ width: '360px' }"
+        styleClass="p-card-shadow"
+        style="overflow: auto"
+      >
+        <ng-template pTemplate="header">
+          <img src="assets/cat-statue.jpg" />
+        </ng-template>
+        <p>Estatua de gato egipcio que representa a la diosa Bastet.</p>
+      </p-card>
     </p-tabPanel>
   </p-tabView>
 </div>

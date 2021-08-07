@@ -8,6 +8,11 @@ import { RazasComponent } from './componentes/razas/razas.component';
 import { GaleriaComponent } from './componentes/galeria/galeria.component';
 
 const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'inicio',
+    pathMatch: 'full',
+  },
   { path: 'inicio', component: InicioComponent },
   { path: 'evo', component: EvolucionComponent },
   { path: 'carac', component: CaracteristicasComponent },

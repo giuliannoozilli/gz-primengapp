@@ -16,7 +16,7 @@
 <div class="pagebody">
   <p-scrollTop></p-scrollTop>
   <p-divider></p-divider>
-  <p>
+  <p class="spara">
     La cantidad de razas de exhibición reconocidas que han definido
     características heredadas ha aumentado dramáticamente desde finales de la
     década de 1950 a medida que los gatos se han vuelto más populares como
@@ -34,45 +34,50 @@
     En la tabla se enumera una selección de razas de gatos domésticos de pelo
     corto.
   </p>
-  <p-table [value]="razas2">
-    <ng-template pTemplate="header">
-      <tr>
-        <th></th>
-        <th>Nombre</th>
-        <th>Origen</th>
-        <th>Características</th>
-      </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-raza2>
-      <tr>
-        <td><img src="assets/sh-cats/{{ raza2.image }}" /></td>
-        <td>{{ raza2.nombre }}</td>
-        <td>{{ raza2.origen }}</td>
-        <td>{{ raza2.carac }}</td>
-      </tr>
-    </ng-template>
-  </p-table>
+  <p-fieldset [toggleable]="true">
+    <p-table [value]="razas2">
+      <ng-template pTemplate="header">
+        <tr>
+          <th></th>
+          <th>Nombre</th>
+          <th>Origen</th>
+          <th>Características</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-raza2>
+        <tr>
+          <td><img src="assets/sh-cats/{{ raza2.image }}" /></td>
+          <td>{{ raza2.nombre }}</td>
+          <td>{{ raza2.origen }}</td>
+          <td>{{ raza2.carac }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-fieldset>
+
   <h2>Lista de razas con pelo largo</h2>
   <p>
     En la tabla se enumera una selección de razas de gatos domésticos de pelo
     largo.
   </p>
-  <p-table [value]="razas">
-    <ng-template pTemplate="header">
-      <tr>
-        <th></th>
-        <th>Nombre</th>
-        <th>Origen</th>
-        <th>Características</th>
-      </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-raza>
-      <tr>
-        <img src="assets/lh-cats/{{ raza.image }}" />
-        <td>{{ raza.nombre }}</td>
-        <td>{{ raza.origen }}</td>
-        <td>{{ raza.carac }}</td>
-      </tr>
-    </ng-template>
-  </p-table>
+  <p-fieldset [toggleable]="true">
+    <p-table [value]="razas">
+      <ng-template pTemplate="header">
+        <tr>
+          <th></th>
+          <th>Nombre</th>
+          <th>Origen</th>
+          <th>Características</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-raza>
+        <tr>
+          <img src="assets/lh-cats/{{ raza.image }}" />
+          <td>{{ raza.nombre }}</td>
+          <td>{{ raza.origen }}</td>
+          <td>{{ raza.carac }}</td>
+        </tr>
+      </ng-template>
+    </p-table>
+  </p-fieldset>
 </div>
